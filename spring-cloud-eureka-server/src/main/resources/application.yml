@@ -5,10 +5,10 @@ server:
 spring:
     application:
         name: eureka-server
-    devtools:
-        restart:
-            enabled: true     # spring-boot devtools热部署
-            additional-paths: src/main/java    # 设置重启的目录
+#  devtools:
+          ##        restart:
+          ##            enabled: true     # spring-boot devtools热部署
+          ##            additional-paths: src/main/java    # 设置重启的目录
 
             
 # 应用服务名称

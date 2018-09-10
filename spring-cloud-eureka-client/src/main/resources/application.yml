@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eureka-client
+  port: 9000
+
+# 应用服务名称
+eureka:
+  instance:
+    hostname: localhost  # 设置当前eureka实例主机名称
+    # appname: eureka-server  # 服务名称，默认获取spring.application.name配置值，如果没有则为 unknown
+  client:
+    registerWithEureka: true  #是否将eureka自身作为应用注册到eureka注册中心
+    fetchRegistry: false  #为true时，可以启动，但报异常：Cannot execute request on any known server
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
